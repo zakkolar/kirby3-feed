@@ -98,7 +98,7 @@ final class Feed
     {
         $keys = [
             kirby()->language() ? kirby()->language()->code() : '',
-            str_replace('.', '', kirby()->plugin('bnomei/feed')->version()[0]),
+//            str_replace('.', '', kirby()->plugin('bnomei/feed')->version()[0]),
             A::get($this->options, 'snippet'),
             A::get($this->options, 'urlfield'),
             A::get($this->options, 'textfield'),
