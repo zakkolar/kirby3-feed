@@ -100,6 +100,10 @@ final class Feed
             kirby()->language() ? kirby()->language()->code() : '',
             str_replace('.', '', kirby()->plugin('bnomei/feed')->version()[0]),
             A::get($this->options, 'snippet'),
+            A::get($this->options, 'urlfield'),
+            A::get($this->options, 'textfield'),
+            A::get($this->options, 'titlefield'),
+            A::get($this->options, 'idfield'),
         ];
         $pages = A::get($this->options, 'items');
         foreach ($pages as $page) {
